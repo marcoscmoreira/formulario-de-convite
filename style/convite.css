@@ -1,0 +1,43 @@
+aside {
+    max-width: 100%;
+
+    background-color: var(--shape-body);
+    border-radius: .75rem;
+
+    background-image: url(../assets/images/Background.png);
+    background-size: cover;
+    background-position: center;
+
+    padding: 2rem;
+
+    & .banner-container {
+
+        & img {
+            width: 2.866rem;
+        }
+
+        & h1 {
+            font: 400 2.5rem var(--ff-leckerli);
+            color: var(--pink);
+        }
+
+        & div span {
+            font: var(--body-md);
+            color: var(--text-heading);
+            margin-top: 0.25rem;
+        }
+
+    }
+
+}
+
+main {
+    overflow: auto;
+    background-color: var(--shape-body);
+    border-radius: 0.75rem;
+    max-width: 100%;
+    margin-right: 1.25rem;
+
+    padding: 5rem 8.125rem;
+        
+}
