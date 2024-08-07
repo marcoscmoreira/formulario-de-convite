@@ -18,6 +18,16 @@ select {
 
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 1px solid var(--brand-dark);
+    /* border-color: var(--stroke-hightlight); */
+
+    /* fazer funcionar no safari */
+    outline-offset: .1px;
+}
+
 input[type="datetime-local"] {
     
     &::-webkit-calendar-picker-indicator {
