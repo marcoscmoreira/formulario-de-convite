@@ -3,7 +3,7 @@ textarea,
 select {
     appearance: none;
     width: 100%;
-    height: 3rem;
+    /* height: 3rem; */
 
     padding: 0.8125rem 1rem;
     background-color: var(--input-base);
@@ -16,7 +16,13 @@ select {
 
     font: var(--body-md);
 
+}
 
+input[type="datetime-local"] {
+    
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
 }
 
 label {
