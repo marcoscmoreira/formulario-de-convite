@@ -1,0 +1,56 @@
+@import url(fields/index.css);
+
+#main-container {
+    
+    form {
+        margin-top: 2.5rem;
+    }
+
+    fieldset {
+        border: none;
+        display: grid;
+        gap: 1rem;
+        
+    }
+
+    legend {
+        margin-bottom: 0.75rem;
+        position: relative;
+        margin-left: 2rem;
+
+        &.icon-calender::before {
+            content: '';
+            background: url(../assets/icons/calendar.svg) center/contain;
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            top: 0;
+            left: -2rem;
+        }
+
+        &.icon-brush::before {
+            content: '';
+            background: url(../assets/icons/brush.svg) center/contain;
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            top: 0;
+            left: -2rem;
+        }
+
+        &.icon-contact::before {
+            content: '';
+            background: url(../assets/icons/contact.svg) center/contain;
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            top: 0;
+            left: -2rem;
+        }
+    }
+
+    fieldset + fieldset {
+        margin-top: 3rem;
+    }
+
+}

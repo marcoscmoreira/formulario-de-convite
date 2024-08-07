@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     /* Variaveis de cores */
     --brand-light: #59b2ff;
@@ -28,9 +34,9 @@
 
     /* Variaveis de texto */
 
-    --ff-leckerli: "Leckerli One", cursive;
-    --ff-ballo: font-family: "Baloo 2", sans-serif;
-    --ff-openSans: font-family: "Open Sans", sans-serif;
+    --ff-leckerli: 'Leckerli One', cursive;
+    --ff-ballo: 'Baloo 2', sans-serif;
+    --ff-openSans: 'Open Sans', sans-serif;
 
     --heading-md: 700 1.75rem var(--ff-ballo);
     --heading-sm: 700 1.125rem var(--ff-ballo);
@@ -41,16 +47,11 @@
     
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     
     background-color: #29292E;
-    /* background-color: var(--shape-background); */
     color: var(--text-body);
 
 }
@@ -58,4 +59,17 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+h1, legend {
+    color: var(--text-heading);
+}
+
+h1 {
+    font: var(--heading-md);
+}
+
+legend {
+    font: var(--heading-sm);
+    color: var(--text-heading);
 }
