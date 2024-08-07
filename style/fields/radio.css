@@ -45,11 +45,7 @@
 
     &:hover,
     &:focus-within {
-        /* border: 1px solid var(--stroke-hightlight); */
-
-        /* & .radio-image {
-            background-image: url(../../assets/icons/radio-hover.svg);
-        } */
+        border: 4px solid var(--brand-light);
     }
 
     &:has(:checked) {
@@ -83,8 +79,7 @@
         /* inset: 0; */
     }
 
-    & input[type="radio"]:focus-within,
-    & input:focus {
+    & input[type="radio"]:focus-within {
         border: 4px solid var(--brand-light);
     }
 
