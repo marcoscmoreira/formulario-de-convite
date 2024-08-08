@@ -37,6 +37,7 @@
 
             <form method="post" enctype="multipart/form-data">
 
+                <!-- Section About -->
                 <fieldset>
                     <legend class="icon-calender">Sobre o evento</legend>
 
@@ -92,6 +93,7 @@
 
                 </fieldset>
 
+                <!-- Section Personalização -->
                 <fieldset>
                     <legend class="icon-brush">Personalização</legend>
 
@@ -241,7 +243,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-1">
+                        <div class="flex-2">
                             <label for="cover-picture">Foto de capa</label>
                             <input id="cover-picture" name="cover-picture" type="file">
                         </div>
@@ -250,6 +252,7 @@
 
                 </fieldset>
 
+                <!-- Section Contatct -->
                 <fieldset>
                     <legend class="icon-contact">Dados para contato</legend>
 
@@ -273,6 +276,22 @@
                     <div class="border"></div>
 
                 </fieldset>
+
+                <!-- Section Termos e privacidade -->
+                <div class="thermes-container flex flex-direction-column">
+                    <div class="checkbox-wrapper flex">
+                        <input checked name="therme" id="therme" type="checkbox">
+                        <span>Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></span>
+                    </div>
+                    <div class="checkbox-wrapper flex">
+                        <input name="email-promotion" id="email-promotion" type="checkbox">
+                        <span>Aceito receber atualizações e promoções por e-mail</a></span>
+                    </div>
+                    <div class="checkbox-wrapper flex">
+                        <input name="sms-promocional" id="sms-promocional" type="checkbox">
+                        <span>Aceito receber atualizações e promoções por SMS</a></span>
+                    </div>
+                </div>
 
             </form>
 

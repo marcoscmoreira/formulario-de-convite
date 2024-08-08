@@ -45,7 +45,8 @@
 
     &:hover,
     &:focus-within {
-        border: 4px solid var(--brand-light);
+        border: 1px solid var(--brand-light);
+        cursor: pointer;
     }
 
     &:has(:checked) {

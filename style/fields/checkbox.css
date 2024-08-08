@@ -1,0 +1,53 @@
+.thermes-container {
+    margin-top: 2.5rem;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: self-start;
+
+    
+}
+
+.checkbox-wrapper {
+    align-items: center;
+
+    & [type="checkbox"] {
+        all: unset;
+        inset: 0;
+    }
+
+    input[type="checkbox"] {
+        border: 1px solid var(--input-stroke);
+        background-color: var(--input-base);
+        border-radius: .25rem;
+        width: 1.25rem;
+        height: 1.25rem;
+
+        width: 15px;
+        height: 15px;
+
+        &:hover,
+        &:focus-within {
+            border: 1px solid var(--brand-light);
+            cursor: pointer;
+        }
+
+        &:has(:checked) {
+            /* background-image: url(../../assets/icons/checkbox-checked.svg); */
+
+            border: 1px solid red;
+        }
+        
+
+    }
+
+    & span {
+        margin-left: 0.75rem;
+        font: var(--body-sm);
+
+        & a {
+            text-decoration: underline;
+            color: var(--brand-light);
+            font: inherit;
+        }
+    }
+}
