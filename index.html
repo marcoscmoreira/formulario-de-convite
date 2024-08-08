@@ -102,12 +102,6 @@
                             <input aria-label="brand-light" type="radio" name="colors">
                         </div>
                         <div>
-                            <input aria-label="brand-mid" type="radio" name="colors">
-                        </div>
-                        <div>
-                            <input checked aria-label="brand-dark" type="radio" name="colors">
-                        </div>
-                        <div>
                             <input aria-label="purple" type="radio" name="colors">
                         </div>
                         <div>
@@ -237,6 +231,46 @@
 
                     </div>
 
+                    <div class="flex gap-1">
+                        <div class="switch-container flex-1">
+                            <label for="togle-switch" class="switch">Estilo</label>
+                            <input type="checkbox" name="togle-switch" id="togle-switch">
+                            <span class="slider round"></span>
+                            <div class="label">
+                                <label aria-label="escuro">Escuro</label>
+                            </div>
+                        </div>
+
+                        <div class="flex-1">
+                            <label for="cover-picture">Foto de capa</label>
+                            <input id="cover-picture" name="cover-picture" type="file">
+                        </div>
+                    </div>
+
+
+                </fieldset>
+
+                <fieldset>
+                    <legend class="icon-contact">Dados para contato</legend>
+
+                    <div class="input-wraper">
+                        <label for="name">Nome</label>
+                        <input name="name" id="name" type="text" placeholder="Nome completo">
+                    </div>
+
+                    <div class="flex gap-1">
+                        <div class="input-wraper flex-2">
+                            <label for="e-mail">E-mail</label>
+                            <input name="e-mail" id="e-mail" type="text" placeholder="exemplo@email.com" />
+                        </div>
+
+                        <div class="input-wraper flex-2">
+                            <label for="phone">Telefone</label>
+                            <input name="phone" id="phone" type="tel" placeholder="(99) 99999-9999" >
+                        </div>
+                    </div>
+
+                    <div class="border"></div>
 
                 </fieldset>
 

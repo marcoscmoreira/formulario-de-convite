@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 33.87% 66.13%;
     
-    max-width: 90rem;
+    width: 90rem;
     height: 100vh;
 
     background-color: var(--shape-background);

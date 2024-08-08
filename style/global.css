@@ -73,3 +73,9 @@ legend {
     font: var(--heading-sm);
     color: var(--text-heading);
 }
+
+
+.border {
+    margin-top: 3rem;
+    border-bottom: 1px solid var(--input-stroke);
+}

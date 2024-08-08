@@ -76,7 +76,7 @@
     & input:hover {
         all: unset;
         /* position: absolute; */
-        /* inset: 0; */
+        inset: 0;
     }
 
     & input[type="radio"]:focus-within {
@@ -97,10 +97,6 @@
 
         &[aria-label="brand-light"] {
             background-color: var(--brand-light);
-        }
-
-        &[aria-label="brand-mid"] {
-            background-color: var(--brand-mid);
         }
 
         &[aria-label="brand-dark"] {

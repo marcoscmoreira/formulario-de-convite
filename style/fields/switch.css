@@ -1,0 +1,67 @@
+/* The switch - the box around the slider */
+.switch-container {
+    position: relative;
+
+    & input {
+        all: unset;
+    }
+    
+    & .switch {
+        
+        display: inline-block;
+        width: 3.75rem;
+        height: 2.125rem;
+    }
+
+    & .slider {
+        width: 4rem;
+        height: 2rem;
+        
+        position: absolute;
+        cursor: pointer;
+        top: 40px;
+        left: 0;
+        background-color: var(--input-base);
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    & .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    & input:checked + .slider {
+        background-color: var(--brand-light);
+    }
+
+    & input:focus + .slider {
+        box-shadow: 0 0 1px var(--brand-light);
+    }
+
+    & input:checked + .slider:before {
+        -webkit-transform: translateX(29px);
+        -ms-transform: translateX(29px);
+        transform: translateX(29px);
+    }
+
+    & .slider.round {
+        border-radius: 34px;
+    }
+
+    & .slider.round:before {
+        border-radius: 50%;
+    }
+
+    & .label {
+        position: absolute;
+        left: 5rem;
+    }
+}
