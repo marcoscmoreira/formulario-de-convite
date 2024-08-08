@@ -1,0 +1,35 @@
+.button-wrapper {
+
+    margin-top: 3rem;
+    justify-content: end;
+
+    & button {
+        all: unset;
+    }
+
+    & button:hover {
+        cursor: pointer;
+        background-color: var(--brand-mid);
+        /* transition: background-color 8s; */
+        
+    }
+
+    & button {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        padding: .8125rem 1.25rem;
+
+        background-color: var(--brand-dark);
+        border-radius: .5rem;
+        margin-left: 20px;
+
+        & img {
+            margin-right: .75rem;
+        }
+
+    }
+
+    
+
+}
