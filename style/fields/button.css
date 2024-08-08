@@ -20,6 +20,9 @@
         width: fit-content;
         padding: .8125rem 1.25rem;
 
+        font: var(--body-md);
+        color: var(--text-heading);
+
         background-color: var(--brand-dark);
         border-radius: .5rem;
         margin-left: 20px;
