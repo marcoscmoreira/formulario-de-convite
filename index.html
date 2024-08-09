@@ -244,9 +244,18 @@
                         </div>
 
                         <div class="input-file flex-2">
-                            <label for="cover-picture">Foto de capa</label>
-                            <input id="cover-picture"  name="cover-picture" type="file">
-                            
+                            <div class="input-file-wrapper">
+                                <div>
+                                    <label for="cover-picture">Foto de capa</label>
+                                </div>
+
+                                <div class="input-file-container">
+                                    <input id="cover-picture" name="cover-picture" type="file">
+                                    <span>Nenhum arquivo selecionado</span>
+                                </div>
+                                
+                            </div>
+
                         </div>
                     </div>
 
@@ -259,18 +268,22 @@
 
                     <div class="input-wraper">
                         <label for="name">Nome</label>
-                        <input name="name" id="name" type="text" placeholder="Nome completo">
+                        <input required name="name" id="name" type="text" placeholder="Nome completo">
+                        <div class="error">
+                            <img src="assets/icons/alert-circle.svg" alt="icone de alerta vermelho">
+                            <small>Campo obrigatório</small>
+                        </div>
                     </div>
 
                     <div class="flex gap-1">
                         <div class="input-wraper flex-2">
                             <label for="e-mail">E-mail</label>
-                            <input name="e-mail" id="e-mail" type="text" placeholder="exemplo@email.com" />
+                            <input name="e-mail" id="e-mail" type="email" placeholder="exemplo@email.com" />
                         </div>
 
                         <div class="input-wraper flex-2">
                             <label for="phone">Telefone</label>
-                            <input name="phone" id="phone" type="tel" placeholder="(99) 99999-9999" >
+                            <input name="phone" id="phone" type="tel" placeholder="(99) 99999-9999">
                         </div>
                     </div>
 
@@ -282,7 +295,8 @@
                 <div class="thermes-container flex flex-direction-column">
                     <div class="checkbox-wrapper flex">
                         <input checked name="therme" id="therme" type="checkbox">
-                        <span>Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></span>
+                        <span>Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de
+                                Privacidade</a></span>
                     </div>
                     <div class="checkbox-wrapper flex">
                         <input name="email-promotion" id="email-promotion" type="checkbox">
@@ -295,14 +309,14 @@
                 </div>
 
                 <!-- Submit Button -->
-                 <div class="button-wrapper flex">
-                    
+                <div class="button-wrapper flex">
+
                     <button type="button">
                         <img src="assets/icons/ticket.svg" alt="">
                         Gerar convite
                     </button>
 
-                 </div>
+                </div>
 
             </form>
 

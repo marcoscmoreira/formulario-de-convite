@@ -16,13 +16,37 @@ select {
 
     font: var(--body-md);
 
+    &:invalid {
+        border: 1px solid var(--danger);
+    }
+
+    & + small {
+        font: var(--body-sm);
+        color: var(--danger);
+        display: inline-block;
+        margin-top: .25rem;
+    }
+
+    &[required] + .error {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+        font: var(--body-sm);
+        color: var(--danger);
+        margin-top: .25rem;
+    }
+
+    &:not(:focus):valid + .error {
+        display: none;
+    }
+
 }
 
 input:focus,
 select:focus,
 textarea:focus {
     outline: 1px solid var(--brand-dark);
-    /* border-color: var(--stroke-hightlight); */
 
     /* fazer funcionar no safari */
     outline-offset: .1px;

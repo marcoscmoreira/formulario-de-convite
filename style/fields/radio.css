@@ -192,11 +192,8 @@
 
         &:hover {
             cursor: pointer;
+            border: 2px solid var(--brand-light);
+            border-radius: 0.5rem;
         }
     }
-}
-
-.input-file {
-
-    
 }

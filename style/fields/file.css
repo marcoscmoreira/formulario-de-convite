@@ -1,0 +1,88 @@
+.input-file-wrapper {
+    display: block;
+}
+
+.input-file-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    & span {
+        margin-left: .75rem;
+        font: var(--body-md);
+    }
+
+}
+
+
+.input-file {
+
+    & input[type="file"] {
+        all: unset;
+        opacity: 0;
+    }
+
+    & input[type="file"] {
+        display: inline-flex;
+        align-self: baseline;
+
+        padding: 0.625rem 0.75rem;
+
+        opacity: 1;
+        width: 7.25rem;
+        height: 2.5rem;
+        background-color: var(--shape-button);
+        -webkit-background-clip: initial;
+        background-clip: initial;
+
+        cursor: pointer;
+        border-radius: .5rem;
+        border: transparent;
+        
+        position: relative;
+
+    }
+    
+
+    & input[type="file"]:before {
+
+        content: 'Selecionar';
+
+        display: flex;
+        align-self: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+        width: 7.25rem;
+        height: 2.5rem;
+        
+        padding: 0.625rem 0.75rem;
+
+        background-color: var(--shape-button);
+        background-image: url(../../assets/icons/upload.svg);
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        background-position: 5px;
+
+        font: var(--body-sm);
+        color: var(--text-heading);
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        -webkit-background-clip: initial;
+        background-clip: initial;
+
+    }
+
+    & input[type="file"]:hover:before {
+        background-color: var(--shape-hover);
+        -webkit-background-clip: initial;
+        background-clip: initial;
+    }
+    
+}
