@@ -34,26 +34,23 @@
 
     /* Variaveis de texto */
 
-    --ff-leckerli: 'Leckerli One', cursive;
-    --ff-ballo: 'Baloo 2', sans-serif;
-    --ff-openSans: 'Open Sans', sans-serif;
+    --ff-leckerli: "Leckerli One", cursive;
+    --ff-ballo: "Baloo 2", sans-serif;
+    --ff-openSans: "Open Sans", sans-serif;
 
     --heading-md: 700 1.75rem var(--ff-ballo);
     --heading-sm: 700 1.125rem var(--ff-ballo);
 
     --body-md: 500 1rem var(--ff-openSans);
     --body-sm: 500 0.875rem var(--ff-openSans);
-    --body-xsm: 500 .75rem var(--ff-openSans);
-    
+    --body-xsm: 500 0.75rem var(--ff-openSans);
 }
 
-
-
 body {
-    
-    background-color: #29292E;
+    background-color: #29292e;
     color: var(--text-body);
 
+    /* overflow-x: hidden; */
 }
 
 a {
@@ -61,7 +58,8 @@ a {
     color: inherit;
 }
 
-h1, legend {
+h1,
+legend {
     color: var(--text-heading);
 }
 
@@ -73,7 +71,6 @@ legend {
     font: var(--heading-sm);
     color: var(--text-heading);
 }
-
 
 .border {
     margin-top: 3rem;
